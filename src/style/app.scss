@@ -1,0 +1,324 @@
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Dark-blue: hsl(198, 62%, 26%);
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4rem;
+  font-family: "Barlow", sans-serif;
+}
+
+.navbar {
+  //   background-color: $Dark-moderate-cyan;
+  color: $White;
+  width: 100%;
+  position: absolute;
+  height: 4rem;
+  display: flex;
+  list-style-type: none;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  align-items: center;
+  &__item {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    &--svg {
+      display: none;
+    }
+    &:hover {
+      background-color: rgba($color: white, $alpha: 0.25);
+    }
+  }
+  &__item--left {
+    margin-right: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0;
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0);
+    }
+  }
+}
+.toggle__navbar {
+  list-style-type: none;
+  margin: 0 auto;
+  background-color: red;
+  width: 90%;
+  padding: 1rem 5rem;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fffbf8;
+  border-radius: 5px;
+  display: none;
+  color: #7b7e7e;
+  &--items {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      color: #2c2d11;
+      text-transform: uppercase;
+      background-color: rgba($color: $Yellow, $alpha: 1);
+    }
+  }
+
+  // border-corner-shape: scoop;
+}
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50rem repeat(2, max-content) 30rem;
+  &__image_title {
+    font-family: "Fraunces", serif;
+  }
+  &__image {
+    width: 100%;
+    &_title {
+      color: $Dark-blue;
+      font-size: 1.5rem;
+    }
+  }
+  &__content {
+    // background-color: red;
+    padding: 1rem 0;
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__desc {
+      color: $Very-dark-grayish-blue;
+      font-size: 1.2rem;
+      // width: 60%;
+    }
+    &--border,
+    &_title,
+    &__image_title {
+      font-family: "Fraunces", serif;
+    }
+    &_title {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 900;
+    }
+    &--border {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      border-bottom: 5px solid white;
+
+      // background-color: green;
+      width: max-content;
+      // display: inline-block;
+      &:hover {
+        border-bottom: 5px solid #f3d10a;
+
+        border-radius: 5px;
+      }
+    }
+  }
+  &__image--bg1 {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    color: #25584f;
+  }
+  &__image--bg2 {
+    background-image: url("../images/desktop/image-photography.jpg");
+    color: #1e526a;
+  }
+  &__image--bg1,
+  &__image--bg2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+    gap: 1rem;
+  }
+}
+.review__text {
+  color: $Very-dark-grayish-blue;
+}
+.header {
+  // font-family: "Fraunces", serif;
+  // font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $White;
+  font-size: 3rem;
+  // letter-spacing: 0.5rem;
+  background-image: url("../images/desktop/image-header.jpg");
+  grid-column: 1/-1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 17rem;
+  align-items: center;
+  gap: 6rem;
+  &__tittle {
+    text-align: center;
+    line-height: 3rem;
+  }
+}
+.reviews {
+  width: 100%;
+  // min-height: 30rem;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  &__items {
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+  }
+  &__item {
+    // height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__item--img {
+    width: 5rem;
+    border-radius: 5rem;
+  }
+  // padding: 6rem 0;
+}
+
+.review__text {
+  text-align: center;
+}
+.review__name {
+  text-align: center;
+}
+.name {
+  font-weight: 600;
+}
+.post {
+  font-weight: 500;
+  color: $Grayish-blue;
+}
+.reviews__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.5rem;
+  color: $Grayish-blue;
+}
+.gallary {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content;
+  &__images {
+    width: 100%;
+  }
+}
+.footer {
+  width: 100%;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #90d4c5;
+  color: $Dark-moderate-cyan;
+  gap: 2rem;
+  &__links {
+    display: flex;
+    gap: 2rem;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+.social__links {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.post {
+  color: $Very-dark-grayish-blue;
+}
+.home_image_desc {
+  text-align: center;
+  font-size: 1.2rem;
+
+  width: 60%;
+}
+@media (max-width: 814px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40rem max-content max-content max-content max-content 40rem 40rem;
+    &__content {
+      align-items: center;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    &__image--egg {
+      grid-row: 2/3;
+    }
+    &_image_desc {
+      width: 90%;
+    }
+  }
+  .reviews {
+    &__items {
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  .gallary {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+  }
+  .navbar__item--right {
+    display: none;
+  }
+  .navbar__item--svg {
+    display: block;
+  }
+  .toggle__navbar {
+    display: flex;
+  }
+}

@@ -1,4 +1,4 @@
-import "./style/app.scss";
+import "./app.css";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
 import { Reviews } from "./component/Reviews";
@@ -16,10 +16,11 @@ function App() {
       <Footer />
       <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a href="https://www.frontendmentor.io?ref=challenge">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">carkey</a>.
+        . Coded by{" "}
+        <a href="https://www.frontendmentor.io/profile/Ashimkarrki">carkey</a>.
       </div>
     </div>
   );

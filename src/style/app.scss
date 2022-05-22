@@ -135,11 +135,11 @@ $White: hsl(0, 0%, 100%);
     }
   }
   &__image--bg1 {
-    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-image: url("./images/desktop/image-graphic-design.jpg");
     color: #25584f;
   }
   &__image--bg2 {
-    background-image: url("../images/desktop/image-photography.jpg");
+    background-image: url("./images/desktop/image-photography.jpg");
     color: #1e526a;
   }
   &__image--bg1,
@@ -167,7 +167,7 @@ $White: hsl(0, 0%, 100%);
   color: $White;
   font-size: 3rem;
   // letter-spacing: 0.5rem;
-  background-image: url("../images/desktop/image-header.jpg");
+  background-image: url("./images/desktop/image-header.jpg");
   grid-column: 1/-1;
   background-size: cover;
   background-repeat: no-repeat;
